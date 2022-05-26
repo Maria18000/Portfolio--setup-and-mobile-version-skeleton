@@ -33,7 +33,7 @@ header {
   align-items: center;
 }
 
-label {
+.logo {
   color: #fff5e1;
   font-family: 'Crete Round', serif;
   margin-left: 1em;

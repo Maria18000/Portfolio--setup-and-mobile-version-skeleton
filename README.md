@@ -1,7 +1,6 @@
 # Portfolio: setup and mobile version skeleton
 
-> Module 1: Day 3 Task
-To get familiarized with Flexbox, images, backgorunds and styling 
+> A skeleton of portfolio using the flexboxes, backhground images and styles.
 
 
 ## Built With
