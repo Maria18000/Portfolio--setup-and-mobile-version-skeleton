@@ -35,7 +35,7 @@ header {
 
 label {
   color: #fff5e1;
-  font-family: sans-serif;
+  font-family: 'Crete Round', serif;
   margin-left: 1em;
 }
 
@@ -46,7 +46,7 @@ nav ul li {
 .intro {
   width: 327px;
   height: 124px;
-  font-family: sans-serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -61,7 +61,7 @@ nav ul li {
 h3 {
   width: 327px;
   height: 27px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
