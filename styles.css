@@ -7,24 +7,24 @@ header {
   position: absolute;
   width: 423px;
   height: 65px;
-  left: 0px;
-  top: 0px;
-  background: #3C3A39;
+  left: 0;
+  top: 0;
+  background: #3c3a39;
 }
 
 .hero {
-  background: #1C1A19;
-  background-image: url("Images/Background.png");
+  background: #1c1a19;
+  background-image: url("Images/background.png");
   display: flex;
   background-position: 100% 100%;
-  flex-direction: column;  
+  flex-direction: column;
+  background-repeat: no-repeat;
   padding: 20px 24px 5px 24px;
   position: absolute;
   width: 375px;
   height: 590px;
-  left: 0px;
+  left: 0;
   top: 65px;
-  background-repeat: no-repeat;
 }
 
 .top {
@@ -34,8 +34,8 @@ header {
 }
 
 label {
-  color: #FFF5E1;
-  font-family: 'Crete Round';
+  color: #fff5e1;
+  font-family: 'Courier New', Courier, monospace;
   margin-left: 1em;
 }
 
@@ -46,13 +46,13 @@ nav ul li {
 .intro {
   width: 327px;
   height: 124px;
-  font-family: 'Crete Round';
+  font-family: 'Courier New', Courier, monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -61,14 +61,14 @@ nav ul li {
 h3 {
   width: 327px;
   height: 27px;
-  font-family: 'Roboto';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #FFF5E1;
+  color: #fff5e1;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -82,7 +82,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -90,5 +90,4 @@ h3 {
 
 .icon:hover {
   background-color: rgb(132, 132, 148);
-} 
-
+}
