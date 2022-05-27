@@ -1,0 +1,98 @@
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+header {
+  position: absolute;
+  width: 423px;
+  height: 65px;
+  left: 0;
+  top: 0;
+  background: #3c3a39;
+}
+
+.hero {
+  background: #1c1a19;
+  background-image: url("Images/background.png");
+  display: flex;
+  background-position: 100% 100%;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  padding: 20px 24px 5px 24px;
+  position: absolute;
+  width: 375px;
+  height: 590px;
+  left: 0;
+  top: 65px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff5e1;
+  font-family: 'Crete Round', serif;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+nav ul li {
+  margin-right: 2em;
+}
+
+.intro {
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+h3 {
+  width: 327px;
+  height: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.description {
+  width: 327px;
+  height: 123px;
+  font-family: 'Tiro Telugu', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.icon:hover {
+  background-color: rgb(132, 132, 148);
+}
+
+#social-icons ul {
+  padding: 0;
+}
