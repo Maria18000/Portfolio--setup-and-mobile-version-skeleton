@@ -5,8 +5,8 @@ li {
 
 header {
   position: absolute;
-  width: 423px;
-  height: 65px;
+  width: 65vh;
+  height: 10vh;
   left: 0;
   top: 0;
   background: #3c3a39;
@@ -19,12 +19,12 @@ header {
   background-position: 100% 100%;
   flex-direction: column;
   background-repeat: no-repeat;
-  padding: 20px 24px 5px 24px;
+  padding: 3vh 3.6vh 0.76vh 3.6vh;
   position: absolute;
-  width: 375px;
-  height: 590px;
+  width: 57.8vh;
+  height: 90vh;
   left: 0;
-  top: 65px;
+  top: 10vh;
 }
 
 .top {
@@ -45,14 +45,14 @@ nav ul li {
 }
 
 .intro {
-  width: 327px;
-  height: 124px;
+  width: 49.7vh;
+  height: 18.8vh;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: 0.37px;
+  font-size: 8.5vh;
+  line-height: 9.7vh;
+  letter-spacing: 0.05vh;
   color: #ff6b00;
   flex: none;
   order: 0;
@@ -60,13 +60,13 @@ nav ul li {
 }
 
 h3 {
-  width: 327px;
-  height: 27px;
-  font-family: 'Roboto', sans-serif;
+  width: 49.7vh;
+  height: 4.1vh;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 3.6vh;
+  line-height: 4.8vh;
   display: flex;
   align-items: center;
   color: #fff5e1;
@@ -76,13 +76,13 @@ h3 {
 }
 
 .description {
-  width: 327px;
-  height: 123px;
-  font-family: 'Tiro Telugu', serif;
+  width: 49.7vh;
+  height: 18.7vh;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 2.4vh;
+  line-height: 3.6vh;
   color: #fff;
   flex: none;
   order: 2;
@@ -93,6 +93,229 @@ h3 {
   background-color: rgb(132, 132, 148);
 }
 
+.work ul {
+  padding: 1vh 5vh;
+}
+
+.card ul {
+  padding: 1vh 0;
+}
+
+.skills li {
+  padding: 2vh 2vh;
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+.card ul li {
+  background: rgba(255, 255, 255, 0.24);
+  margin: 0.5vh;
+}
+
 #social-icons ul {
   padding: 0;
+}
+
+.work {
+  position: absolute;
+  width: 65vh;
+  height: 89vh;
+  left: 0;
+  top: 91.3vh;
+  background: #fff;
+}
+
+.work h1 {
+  padding: 10vh 5vh 3vh 5vh;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.6vh;
+  padding-top: 10vh;
+  color: #1c1a19;
+}
+
+.work h2 {
+  padding: 0 5vh;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5.3vh;
+  color: #091e42;
+}
+
+hr {
+  width: 80%;
+  margin-bottom: 5vh;
+}
+
+.work img {
+  padding: 7vh 5vh 0.5vh 5vh;
+  margin-bottom: 1vh;
+}
+
+.work p {
+  text-align: left;
+  padding: 0 5vh;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.6vh;
+  line-height: 4vh;
+  color: #091e42;
+  width: 54.5vh;
+  height: 24.5;
+}
+
+.language {
+  padding: 1.8vh;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2.2vh;
+  line-height: 3.04vh;
+}
+
+#see-project-small {
+  width: 18.8vh;
+  height: 7.3vh;
+  margin: 0 5vh;
+}
+
+button {
+  color: #fff;
+  background: #ff6b00;
+  border: none;
+  padding: 1.8vh;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #e98f4f;
+}
+
+.grid-card {
+  position: relative;
+
+  /* height: 20vh; */
+  top: 237vh;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+
+  /* column-gap: -9vh; */
+}
+
+.wrapper {
+  /* background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Images/work1.png); */
+  background-image: url("Images/work1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  position: relative;
+  height: 85vh;
+  width: 49.8vh;
+  padding: 0 1vh;
+  margin-left: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  color: #fff;
+  padding: 0 3vh;
+}
+
+.card h1 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.5vh;
+  line-height: 6.6vh;
+  padding-top: 20vh;
+  padding-bottom: 0;
+}
+
+.card p {
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.6vh;
+  line-height: 3.6vh;
+  width: 45vh;
+  height: 24.5;
+}
+
+.card button {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  width: 50vh;
+}
+
+.about {
+  position: relative;
+  background: #1c1a19;
+  background-image: url("Images/about.png");
+  display: flex;
+  background-position: 100% 100%;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  padding: 3vh 3.6vh 0.76vh 3.6vh;
+  width: 55vh;
+  height: 80vh;
+  left: 0;
+  top: 235vh;
+}
+
+.about h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about p {
+  margin-top: 0;
+  padding-top: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 2.4vh;
+  line-height: 3.6vh;
+}
+
+.skills {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  position: relative;
+  background: #1c1a19;
+  padding: 3vh 3.6vh 0.76vh 3.6vh;
+  width: 55vh;
+  height: 140vh;
+  left: 0;
+  top: 235vh;
+}
+
+.skills img {
+  width: 3vh;
+  height: 3vh;
+  display: inline-block;
+}
+
+.skills h1 {
+  padding-left: 1vh;
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8vh;
+  line-height: 6.6vh;
+}
+
+.center {
+  text-align: center;
 }
