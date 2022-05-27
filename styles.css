@@ -37,6 +37,7 @@ header {
   color: #fff5e1;
   font-family: 'Crete Round', serif;
   margin-left: 1em;
+  text-decoration: none;
 }
 
 nav ul li {
@@ -90,4 +91,8 @@ h3 {
 
 .icon:hover {
   background-color: rgb(132, 132, 148);
+}
+
+#social-icons ul{
+  padding: 0;
 }
