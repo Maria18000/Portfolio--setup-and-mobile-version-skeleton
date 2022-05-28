@@ -1,6 +1,6 @@
 
 body {
-  margin: 0;
+  margin: 5%;
 }
 
 li {
@@ -9,7 +9,7 @@ li {
 }
 
 .mobile {
-  width: 65vh;
+  width: 55vh;
 }
 
 header {
@@ -50,7 +50,7 @@ nav ul li {
 
 .intro {
   width: 49.7vh;
-  height: 18.8vh;
+  height: 13.7vh;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -58,9 +58,6 @@ nav ul li {
   line-height: 9.7vh;
   letter-spacing: 0.05vh;
   color: #ff6b00;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 h3 {
@@ -71,26 +68,19 @@ h3 {
   font-weight: 700;
   font-size: 3.6vh;
   line-height: 4.8vh;
-  display: flex;
-  align-items: center;
   color: #fff5e1;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .description {
-  width: 49.7vh;
-  height: 18.7vh;
+  width: 49.77vh;
+
+  /* height: 18.7vh; */
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.4vh;
-  line-height: 3.6vh;
+  font-size: 2.43vh;
+  line-height: 3.65vh;
   color: #fff;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
 }
 
 .icon:hover {
@@ -98,7 +88,7 @@ h3 {
 }
 
 .work ul {
-  padding: 1vh 5vh;
+  padding: 1vh 10vh;
 }
 
 .skills li {
@@ -106,6 +96,9 @@ h3 {
   display: block;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  font-size: 3.3vh;
+  line-height: 6.5vh;
+  font-weight: 400;
 }
 
 .work ul li {
@@ -135,7 +128,6 @@ h3 {
 
 .work {
   background: #fff;
-  margin-bottom: 0;
 }
 
 .work h1 {
@@ -143,7 +135,7 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 6.6vh;
-  padding-top: 8vh;
+  padding-top: 12vh;
   color: #1c1a19;
   text-align: center;
 }
@@ -172,8 +164,8 @@ hr {
   padding: 0 5vh;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 2.4vh;
+  font-weight: 500;
+  font-size: 2.43vh;
   line-height: 3.6vh;
   color: #091e42;
   width: 49.7vh;
@@ -211,7 +203,7 @@ button {
 }
 
 button:hover {
-  background-color: #e98f4f;
+  background-color: #e78139;
 }
 
 .grid-card {
@@ -267,36 +259,33 @@ button:hover {
   height: 7.3vh;
 }
 
-.about {
+.about-section {
   background: #1c1a19;
+}
+
+.about {
   background-image: url("Images/about.png");
   display: flex;
   background-position: 100% 100%;
   flex-direction: column;
   background-repeat: no-repeat;
   padding: 3vh 3.6vh 0.76vh 3.6vh;
-  width: 55vh;
-  height: 80vh;
-  position: absolute;
-  margin-top: 5vh;
+  height: 100vh;
+  position: relative;
+  margin-top: 20vh;
 }
 
 .about h1 {
-  margin-bottom: 0;
-  padding-bottom: 0;
   line-height: 13vh;
   letter-spacing: 0.05vh;
-  font-size: 10vh;
+  font-size: 10.9vh;
   text-align: left;
+  padding-top: 5vh;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .about p {
-  margin-top: 0;
-  padding-top: 0;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 2.4vh;
-  line-height: 3.6vh;
   padding-bottom: 6vh;
 }
 
@@ -311,10 +300,7 @@ button:hover {
 .skills {
   font-family: 'Inter', sans-serif;
   color: #fff;
-  background: #1c1a19;
-  padding: 3vh 3.6vh 0.76vh 3.6vh;
-  width: 55vh;
-  margin-top: 15vh;
+  padding: 3vh;
 }
 
 .skills img {
