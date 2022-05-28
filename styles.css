@@ -1,6 +1,6 @@
 
 body {
-  margin: 5%;
+  margin: 0;
 }
 
 li {
@@ -73,8 +73,6 @@ h3 {
 
 .description {
   width: 49.77vh;
-
-  /* height: 18.7vh; */
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
@@ -87,9 +85,6 @@ h3 {
   background-color: rgb(132, 132, 148);
 }
 
-.work ul {
-  padding: 1vh 10vh;
-}
 
 .skills li {
   padding: 2vh 2vh;
@@ -100,7 +95,7 @@ h3 {
   line-height: 6.5vh;
   font-weight: 400;
 }
-
+ 
 .work ul li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -128,6 +123,8 @@ h3 {
 
 .work {
   background: #fff;
+  display: block;
+  float: left;
 }
 
 .work h1 {
@@ -168,8 +165,9 @@ hr {
   font-size: 2.43vh;
   line-height: 3.6vh;
   color: #091e42;
-  width: 49.7vh;
+  /* width: 49.7vh; */
   height: 24.5;
+  width:100%
 }
 
 .language {
@@ -300,7 +298,6 @@ button:hover {
 .skills {
   font-family: 'Inter', sans-serif;
   color: #fff;
-  padding: 3vh;
 }
 
 .skills img {
