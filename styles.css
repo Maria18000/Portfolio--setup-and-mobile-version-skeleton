@@ -1,30 +1,25 @@
+
+body {
+  margin: 0;
+}
+
 li {
   list-style: none;
   display: inline-block;
 }
 
-header {
-  position: absolute;
+.mobile {
   width: 65vh;
+}
+
+header {
   height: 10vh;
-  left: 0;
-  top: 0;
   background: #3c3a39;
 }
 
-.hero {
-  background: #1c1a19;
-  background-image: url("Images/background.png");
+.main {
   display: flex;
-  background-position: 100% 100%;
   flex-direction: column;
-  background-repeat: no-repeat;
-  padding: 3vh 3.6vh 0.76vh 3.6vh;
-  position: absolute;
-  width: 57.8vh;
-  height: 90vh;
-  left: 0;
-  top: 10vh;
 }
 
 .top {
@@ -38,6 +33,15 @@ header {
   font-family: 'Crete Round', serif;
   margin-left: 1em;
   text-decoration: none;
+}
+
+.hero {
+  background: #1c1a19;
+  background-image: url("Images/background.png");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 6vh 3.6vh 0.76vh 3.6vh;
+  height: 90vh;
 }
 
 nav ul li {
@@ -62,7 +66,7 @@ nav ul li {
 h3 {
   width: 49.7vh;
   height: 4.1vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3.6vh;
@@ -97,10 +101,6 @@ h3 {
   padding: 1vh 5vh;
 }
 
-.card ul {
-  padding: 1vh 0;
-}
-
 .skills li {
   padding: 2vh 2vh;
   display: block;
@@ -108,9 +108,25 @@ h3 {
   font-style: normal;
 }
 
+.work ul li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5vh;
+  line-height: 3.04vh;
+  color: #091e42;
+}
+
+.card ul {
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 3vh;
+}
+
 .card ul li {
   background: rgba(255, 255, 255, 0.24);
-  margin: 0.5vh;
+  margin-left: 0;
+  margin-right: 2vh;
 }
 
 #social-icons ul {
@@ -118,30 +134,26 @@ h3 {
 }
 
 .work {
-  position: absolute;
-  width: 65vh;
-  height: 89vh;
-  left: 0;
-  top: 91.3vh;
   background: #fff;
+  margin-bottom: 0;
 }
 
 .work h1 {
-  padding: 10vh 5vh 3vh 5vh;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 6.6vh;
-  padding-top: 10vh;
+  padding-top: 8vh;
   color: #1c1a19;
+  text-align: center;
 }
 
 .work h2 {
-  padding: 0 5vh;
+  margin-left: 4vh;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 5.3vh;
+  font-size: 6vh;
   color: #091e42;
 }
 
@@ -151,8 +163,8 @@ hr {
 }
 
 .work img {
-  padding: 7vh 5vh 0.5vh 5vh;
-  margin-bottom: 1vh;
+  padding: 5vh 5vh 0.55vh 5vh;
+  width: 80%;
 }
 
 .work p {
@@ -161,10 +173,10 @@ hr {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.6vh;
-  line-height: 4vh;
+  font-size: 2.4vh;
+  line-height: 3.6vh;
   color: #091e42;
-  width: 54.5vh;
+  width: 49.7vh;
   height: 24.5;
 }
 
@@ -179,20 +191,23 @@ hr {
   line-height: 3.04vh;
 }
 
-#see-project-small {
-  width: 18.8vh;
-  height: 7.3vh;
-  margin: 0 5vh;
-}
-
 button {
   color: #fff;
   background: #ff6b00;
   border: none;
-  padding: 1.8vh;
+  padding: 1vh;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
+  letter-spacing: 0.1vh;
+  text-align: center;
+}
+
+#see-project-small {
+  width: 18.5vh;
+  height: 7.3vh;
+  margin: 0 5vh;
+  font-size: 2.58vh;
 }
 
 button:hover {
@@ -200,45 +215,37 @@ button:hover {
 }
 
 .grid-card {
-  position: relative;
-
-  /* height: 20vh; */
-  top: 237vh;
   display: grid;
   grid-template-columns: auto;
-  align-items: center;
-
-  /* column-gap: -9vh; */
 }
 
 .wrapper {
-  /* background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Images/work1.png); */
   background-image: url("Images/work1.png");
+  background-position: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  text-align: left;
-  position: relative;
-  height: 85vh;
-  width: 49.8vh;
-  padding: 0 1vh;
   margin-left: 5vh;
+  margin-right: 12vh;
+  padding-top: 15vh;
   display: flex;
   flex-direction: column;
 }
 
 .card {
   color: #fff;
-  padding: 0 3vh;
+  padding-left: 2vh;
 }
 
 .card h1 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 5.5vh;
+  font-size: 4.8vh;
   line-height: 6.6vh;
-  padding-top: 20vh;
-  padding-bottom: 0;
+  width: 44.9vh;
+  height: 12.3vh;
+  padding-bottom: 1vh;
+  letter-spacing: 0.2vh;
 }
 
 .card p {
@@ -249,18 +256,18 @@ button:hover {
   font-size: 2.6vh;
   line-height: 3.6vh;
   width: 45vh;
-  height: 24.5;
 }
 
-.card button {
-  margin: 0;
-  padding: 0;
+.wrapper button {
   color: #fff;
-  width: 50vh;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 2.6vh;
+  width: 100%;
+  height: 7.3vh;
 }
 
 .about {
-  position: relative;
   background: #1c1a19;
   background-image: url("Images/about.png");
   display: flex;
@@ -270,13 +277,17 @@ button:hover {
   padding: 3vh 3.6vh 0.76vh 3.6vh;
   width: 55vh;
   height: 80vh;
-  left: 0;
-  top: 235vh;
+  position: absolute;
+  margin-top: 5vh;
 }
 
 .about h1 {
   margin-bottom: 0;
   padding-bottom: 0;
+  line-height: 13vh;
+  letter-spacing: 0.05vh;
+  font-size: 10vh;
+  text-align: left;
 }
 
 .about p {
@@ -286,24 +297,29 @@ button:hover {
   font-weight: 400;
   font-size: 2.4vh;
   line-height: 3.6vh;
+  padding-bottom: 6vh;
+}
+
+.about button {
+  letter-spacing: 0.03em;
+  line-height: 3.6vh;
+  font-size: 2.5vh;
+  width: 24vh;
+  height: 7.3vh;
 }
 
 .skills {
   font-family: 'Inter', sans-serif;
   color: #fff;
-  position: relative;
   background: #1c1a19;
   padding: 3vh 3.6vh 0.76vh 3.6vh;
   width: 55vh;
-  height: 140vh;
-  left: 0;
-  top: 235vh;
+  margin-top: 15vh;
 }
 
 .skills img {
   width: 3vh;
   height: 3vh;
-  display: inline-block;
 }
 
 .skills h1 {
@@ -318,4 +334,5 @@ button:hover {
 
 .center {
   text-align: center;
+  padding-top: 15vh;
 }
