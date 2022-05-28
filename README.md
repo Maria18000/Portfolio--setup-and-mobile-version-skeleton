@@ -1,6 +1,6 @@
-# Portfolio: setup and mobile version skeleton
+# Portfolio
 
-> A skeleton of portfolio using the flexboxes, backhground images and styles.
+> A mobile-based version of my portfolio 
 
 
 ## Built With
