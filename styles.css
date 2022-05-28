@@ -85,17 +85,6 @@ h3 {
   background-color: rgb(132, 132, 148);
 }
 
-/* .card li {
-  padding-right: 3%;
-}
-.card ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 15px;
-  padding-bottom: 10px;
-} */
-
 .skills li {
   padding: 2vh 2vh;
   display: block;
@@ -225,13 +214,8 @@ button:hover {
   background-image: url("Images/work1.png");
   background-position: 100% 100%;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   min-height: 60.8vh;
-
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-end; */
   margin-top: 5vh;
   margin-left: 5vh;
   margin-right: 5vh;
