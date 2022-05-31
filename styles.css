@@ -316,6 +316,7 @@ button:hover {
 .skills {
   font-family: 'Inter', sans-serif;
   color: #fff;
+  padding-bottom: 10vh;
 }
 
 .skills img {
@@ -337,3 +338,4 @@ button:hover {
   text-align: center;
   padding-top: 15vh;
 }
+
