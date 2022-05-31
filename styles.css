@@ -339,3 +339,74 @@ button:hover {
   padding-top: 15vh;
 }
 
+footer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer h1 {
+  margin: 5vh;
+  margin-top: 17vh;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5vh;
+    color: #172B4D;
+    width: 49vh;
+    line-height: 6.6vh;
+    text-align: center;
+}
+
+form input {
+  background: transparent;
+  border:none;
+  border-bottom: 1px solid #8993a4;
+  margin: 5vh;
+  line-height: 25px;
+}
+form div {
+  display: flex;
+  justify-content: center;
+}
+form button {
+  padding: 12px;
+  gap: 10px;
+  width: 131px;
+  height: 48px;
+}
+
+textarea {
+  margin: 5vh;
+  padding: 12px;
+  border:none;
+  width: 80%;
+  height: 130px;
+  background-color: #f3eeeb;
+  box-sizing: border-box;
+  color: #1c1a19;
+}
+
+
+::placeholder {
+  color: #8993a4;
+  padding: 2vh;
+  font-size: 2.2vh;
+}
+
+textarea::placeholder {
+  color: #1c1a19;
+  padding-left: 0%;
+}
+
+footer hr {
+  margin-top: 17vh;
+  margin-bottom: 0%;
+  width: 100%;
+}
