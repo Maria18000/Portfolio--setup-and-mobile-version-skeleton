@@ -85,6 +85,10 @@ h3 {
   background-color: rgb(132, 132, 148);
 }
 
+footer ul li {
+  padding-right: 2vh;
+}
+
 .skills li {
   padding: 2vh 2vh;
   display: block;
@@ -129,6 +133,19 @@ h3 {
   background: #fff;
   display: block;
   float: left;
+}
+
+footer h1 {
+  margin: 3vh;
+  margin-top: 17vh;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5vh;
+  color: #172b4d;
+  width: 49vh;
+  line-height: 6.6vh;
+  text-align: center;
 }
 
 .work h1 {
@@ -197,6 +214,13 @@ button {
   font-weight: 700;
   letter-spacing: 0.1vh;
   text-align: center;
+}
+
+form button {
+  padding: 12px;
+  gap: 10px;
+  width: 131px;
+  height: 48px;
 }
 
 #see-project-small {
@@ -351,48 +375,29 @@ form {
   justify-content: center;
 }
 
-footer h1 {
-  margin: 3vh;
-  margin-top: 17vh;
-    font-family: 'Inter', serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 5vh;
-    color: #172B4D;
-    width: 49vh;
-    line-height: 6.6vh;
-    text-align: center;
-}
-
 form input {
   background: transparent;
-  border:none;
+  border: none;
   border-bottom: 1px solid #8993a4;
   margin: 5vh;
   line-height: 25px;
 }
+
 form div {
   display: flex;
   justify-content: center;
-}
-form button {
-  padding: 12px;
-  gap: 10px;
-  width: 131px;
-  height: 48px;
 }
 
 textarea {
   margin: 5vh;
   padding: 12px;
-  border:none;
+  border: none;
   width: 80%;
   height: 130px;
   background-color: #f7f4f1;
   box-sizing: border-box;
   color: #1c1a19;
 }
-
 
 ::placeholder {
   color: #8993a4;
@@ -416,8 +421,4 @@ footer hr {
   justify-content: center;
   margin-top: 1vh;
   padding-top: 0%;
-}
-
-footer ul li {
-  padding-right: 2vh;
 }
