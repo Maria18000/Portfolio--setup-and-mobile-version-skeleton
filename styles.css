@@ -352,7 +352,7 @@ form {
 }
 
 footer h1 {
-  margin: 5vh;
+  margin: 3vh;
   margin-top: 17vh;
     font-family: 'Inter', serif;
     font-style: normal;
@@ -388,7 +388,7 @@ textarea {
   border:none;
   width: 80%;
   height: 130px;
-  background-color: #f3eeeb;
+  background-color: #f7f4f1;
   box-sizing: border-box;
   color: #1c1a19;
 }
@@ -409,4 +409,15 @@ footer hr {
   margin-top: 17vh;
   margin-bottom: 0%;
   width: 100%;
+}
+
+#social-icons-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  padding-top: 0%;
+}
+
+footer ul li {
+  padding-right: 2vh;
 }
