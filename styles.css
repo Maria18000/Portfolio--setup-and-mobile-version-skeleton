@@ -708,6 +708,29 @@ footer hr {
       width: 80%;
       padding-bottom: 15%;
     }
+
+    .center {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: left;
+    
+    }
+   .footer-top {
+     display: flex;
+     flex-direction: row;
+   }
+    footer h1 {
+      width: 40%;
+      text-align: left;
+    }
+
+    form {
+      width: 70%;
+      height: auto;
+    }
 }
 
 
