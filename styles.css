@@ -328,7 +328,7 @@ button:hover {
   background-repeat: no-repeat;
   padding: 3vh 3.6vh 0.76vh 3.6vh;
   height: 100vh;
-  position: relative;
+  /* position: relative; */
   margin-top: 5vh;
 }
 
@@ -694,6 +694,20 @@ footer hr {
     display: flex;
     align-items: flex-end;
   }
+
+   .about {
+     padding-left: 10%;
+     background-image: url("Images/about-desktop.png");
+     background-size: 40% 40%;
+     background-repeat: no-repeat;
+    background-position: right center;
+    height: 70%;
+    }
+
+    #aboutme {
+      width: 80%;
+      padding-bottom: 15%;
+    }
 }
 
 
