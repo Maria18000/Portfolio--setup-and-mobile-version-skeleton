@@ -3,10 +3,6 @@ body {
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 #desktop-header {
@@ -121,17 +117,14 @@ footer ul li {
 .card ul {
   padding: 0;
   margin-left: 0%;
-  margin-bottom: 3vh;
+  margin-bottom: 5%;
 }
 
 .card ul li {
   background: rgba(255, 255, 255, 0.24);
-  margin-left: 0;
-  margin-right: 2vh;
+  margin: 0% 2% 2% 0%;
   color: #fff;
-  /* display: flex;
-  flex-direction: row;
-  align-content: flex-start; */
+  padding: 3%;
 }
 
 .card p {
@@ -167,9 +160,7 @@ footer h1 {
   font-weight: 400;
   font-size: 6vh;
   padding-top: 12vh;
-
-  /* padding-left: 1vh; */
-  color: #1c1a19;
+  color: #091e42;
   text-align: center;
 }
 
@@ -244,7 +235,6 @@ form button {
 
 button:hover {
   background-color: #e78139;
- 
 }
 
 .card {
@@ -264,6 +254,7 @@ button:hover {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+
   /* padding-top: 9vh; */
   width: 100%;
 }
@@ -283,11 +274,12 @@ button:hover {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+
   /* margin-bottom: 10%; */
+
   /* margin-top: 80px; */
   width: 90%;
   margin-top: 20%;
- 
 }
 
 .card-body-head p {
@@ -329,6 +321,7 @@ button:hover {
   background-repeat: no-repeat;
   padding: 3vh 3.6vh 0.76vh 3.6vh;
   height: 100vh;
+
   /* position: relative; */
   margin-top: 5vh;
 }
@@ -409,23 +402,21 @@ form div {
 
 textarea {
   margin: 5%;
-  padding: 12px;
+  padding-left: 2%;
+  padding-top: 2%;
   border: none;
   height: 130px;
   background-color: #f7f4f1;
-  box-sizing: border-box;
   color: #1c1a19;
 }
 
-::placeholder {
+input::placeholder {
   color: #8993a4;
-  padding: 2vh;
   font-size: 2.2vh;
 }
 
 textarea::placeholder {
   color: #1c1a19;
-  padding-left: 0%;
 }
 
 footer hr {
@@ -465,6 +456,10 @@ footer hr {
     text-decoration: none;
   }
 
+  #skills-ul li {
+    padding-left: 0%;
+  }
+
   #navigation ul li {
     padding-right: 9%;
     font-weight: 600;
@@ -493,10 +488,9 @@ footer hr {
     padding-bottom: 9%;
     background-image: url("Images/background-desktop.png");
     background-position: right center;
-    background-size: 50% 90%;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
- 
-  } 
+  }
 
   .hero p {
     width: 50%;
@@ -523,6 +517,10 @@ footer hr {
     width: 60%;
   }
 
+  .card-body-head p {
+    margin-top: 0%;
+  }
+
   .work {
     display: flex;
     flex-direction: column;
@@ -532,51 +530,31 @@ footer hr {
   }
 
   #work-top {
-    height: 2%;
-    padding-top: 0%;
-    margin-top: 0%;
-    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
   }
+
+  .divider {
+    border-top: 2px solid  #212121;
+    width: 60%;
+  }
+
+  .footer-top h1 {
+    width: 40%;
+    text-align: left;
+  }
+
   #work-top h1 {
-    padding-left: 5%;
-    float: left;
+    padding-left: 3%;
+    padding-top: 0%;
+    padding-right: 2%;
   }
 
   #work-top hr {
-    overflow: hidden;
-    width: 50%;
+    display: none;
   }
-  /* #work-top {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    width: 100%;
-    height: 3%;
-    padding: 0%;
-    margin: 0%;
-  } */
-
-  /* #work-top-heading {
-    box-sizing: border-box;
-    padding-top: 0%;
-    width: 40%;
-    text-align: left;
-    padding-left: 1%;
-  } */
-
-  /* hr {
-    display: flex;
-    justify-content: center;
-  } */
-
-  /* #line {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    border-top: 2px solid #181616;
-  } */
 
   #work-bottom {
     display: flex;
@@ -588,23 +566,20 @@ footer hr {
     flex-direction: column;
     align-items: center;
     min-width: 60%;
-    min-height: 40%;
-    max-height: 70%;
-    padding: 2%;
   }
 
   .work img {
     height: 100%;
-    transform: scale(1);
+    width: 90%;
   }
 
   #work-right {
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
 
   #work-right h2 {
+    margin-top: 0%;
     padding-bottom: 0%;
     margin-bottom: 3%;
   }
@@ -613,6 +588,7 @@ footer hr {
     padding-top: 0%;
     margin-top: 0%;
   }
+
 
   #labels ul {
     display: flex;
@@ -626,27 +602,31 @@ footer hr {
   }
 
   .card {
-    /* height: 435px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2%;
     height: 100%;
   }
- 
- .card-body-head {
+
+  .card-body-head {
+    display: flex;
+    align-content: flex-end;
     padding-top: 50%;
 
+    /* padding-bottom: 2%; */
   }
- 
-  .card-body-head h3 {
-  width: 100%;
-  padding-bottom: 5%;
-    
-  } 
 
- .card1 .card-body-head {
+  .card-body-head h3 {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .card1 .card-body-head {
     display: none;
   }
+
   .card1 {
     background-image: url("Images/card1.png");
     background-size: cover;
@@ -658,6 +638,7 @@ footer hr {
   .card2 button {
     display: none;
   }
+
   .card2 {
     background-image: url("Images/card2.png");
     background-size: cover;
@@ -669,6 +650,7 @@ footer hr {
   .card3 button {
     display: none;
   }
+
   .card3 {
     background-image: url("Images/card3.png");
     background-size: cover;
@@ -680,8 +662,9 @@ footer hr {
   .card4 button {
     display: none;
   }
+
   .card4 {
-    background-image: url("Images/card3.png");
+    background-image: url("Images/card4.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -691,6 +674,7 @@ footer hr {
   .card5 button {
     display: none;
   }
+
   .card5 {
     background-image: url("Images/card2.png");
     background-size: cover;
@@ -702,6 +686,7 @@ footer hr {
   .card6 button {
     display: none;
   }
+
   .card6 {
     background-image: url("Images/card3.png");
     background-size: cover;
@@ -710,45 +695,40 @@ footer hr {
     align-items: flex-end;
   }
 
-   .about {
-     padding-left: 10%;
-     background-image: url("Images/about-desktop.png");
-     background-size: 40% 40%;
-     background-repeat: no-repeat;
+  .about {
+    padding-left: 10%;
+    background-image: url("Images/about-desktop.png");
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
     background-position: right center;
     height: 70%;
-    }
+  }
 
-    #aboutme {
-      width: 80%;
-      padding-bottom: 15%;
-    }
+  #aboutme {
+    width: 80%;
+    padding-bottom: 15%;
+  }
 
-    .center {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-left: 10%;
-      padding-right: 10%;
-      text-align: left;
-    
-    }
-   .footer-top {
-     display: flex;
-     flex-direction: row;
-   }
-    footer h1 {
-      width: 40%;
-      text-align: left;
-    }
+  .center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+  }
 
-    form {
-      width: 70%;
-      height: auto;
-    }
+  #skills-ul {
+    padding-left: 0%;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  form {
+    padding-top: 5%;
+    width: 70%;
+  }
 }
-
-
-
-
-
