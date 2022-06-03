@@ -244,6 +244,7 @@ form button {
 
 button:hover {
   background-color: #e78139;
+ 
 }
 
 .card {
@@ -492,9 +493,13 @@ footer hr {
     padding-bottom: 9%;
     background-image: url("Images/background-desktop.png");
     background-position: right center;
-    background-size: contain;
+    background-size: 50% 90%;
     background-repeat: no-repeat;
-    z-index: -1;
+ 
+  } 
+
+  .hero p {
+    width: 50%;
   }
 
   #social-icons {
@@ -527,42 +532,51 @@ footer hr {
   }
 
   #work-top {
+    height: 2%;
+    padding-top: 0%;
+    margin-top: 0%;
+    
+  }
+  #work-top h1 {
+    padding-left: 5%;
+    float: left;
+  }
+
+  #work-top hr {
+    overflow: hidden;
+    width: 50%;
+  }
+  /* #work-top {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
 
-    /* align-items: flex-start; */
     width: 100%;
     height: 3%;
     padding: 0%;
     margin: 0%;
-  }
+  } */
 
-  #work-top-heading {
+  /* #work-top-heading {
     box-sizing: border-box;
     padding-top: 0%;
     width: 40%;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center; */
     text-align: left;
     padding-left: 1%;
-  }
+  } */
 
-  hr {
+  /* hr {
     display: flex;
     justify-content: center;
-  }
+  } */
 
-  #line {
+  /* #line {
     display: flex;
     justify-content: center;
     width: 60%;
     border-top: 2px solid #181616;
-  }
+  } */
 
   #work-bottom {
     display: flex;
@@ -581,6 +595,7 @@ footer hr {
 
   .work img {
     height: 100%;
+    transform: scale(1);
   }
 
   #work-right {
