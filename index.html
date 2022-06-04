@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="mobile">
+  <div>
 
     <!-- Header -->
     <header>
@@ -31,14 +31,26 @@
           </ul>
         </nav>
       </div>
+
+      <div id="desktop-header">
+        <a class="logo" href="#">Maria Hussain</a>
+          <nav id = "navigation">
+            <ul>
+              <li> <a href="#"> Portfolio</a></li>
+              <li> <a href="#"> About</a></li>
+              <li> <a href="#"> Contact</a></li>
+              <li> <a href="#"> <img src="images/mail.png" alt =" Message"/></a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
 
     <!-- Main Section -->
     <section class="main">
 
       <!-- Introduction -->
-      <div class="hero">
-        <div>
+      <section class="hero">
+        <div id="hero-main">
           <h1 class="intro"> Hey There. I'm Maria </h1>
           <h3>I am a Software Developer</h3>
           <p class="description">I can help you build a product , feature or website Look through some of my work and
@@ -54,32 +66,47 @@
             <li class="icon"><a href="https://medium.com"><img src="Images/medium.png" alt="medium" /></a></li>
           </ul>
         </div>
-      </div>
+      </section>
+
+
       <!-- work Section -->
       <div class="work">
-        <h1>My Recent Works </h1>
-        <hr>
+        <div id="work-top">
+          <h1>My Recent Works </h1>
+          <div class="divider"></div>
+          <hr>
+      </div>
+      <div id="work-bottom">
+      <div id="work-left">
         <img src="Images/gymfit.png" alt="Gym Fit" />
+      </div>
+      <div id = "work-right">
         <h2>Multi-Post Stories</h2>
         <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
-          <ul>
+         <div >
+          <ul id="labels">
             <li class="language">css</li>
             <li class="language">html</li>
             <li class="language">bootstrap</li>
             <li class="language">Ruby</li>
           </ul>
+        </div>
 
-          <button type="button" id="see-project-small"> See Project</button>
+        <button type="button" id="see-project-small"> See Project</button>
+      </div>
+     </div>
+     </div>
 
-          </div>
-
-          
+      <div class="cards">
+     <div class="card">
 
             <!-- card 1 -->
-            <div class="card">
-              <div class="card-body">
+            
+              <div class="card1 cc">
+                <div class="card-body">
                 <div class="card-body-head">
+
                   <h3>Profesional Art Printing Data</h3>
                   <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                     industry's standard</p>
@@ -92,15 +119,18 @@
                 <div class="card-body-bottom">
                 <button class="project-button" type="button"> See Project</button>
               </div>
+            </div>
               </div>
 
-            </div>
+  
 
             <!-- card 2 -->
-            <div class="card">
-              <div class="card-body">
+           
+              <div class="card-body cc">
+                <div class="card2">
                 <div class="card-body-head">
-                  <h3>Profesional Art Printing Data</h3>
+                  <h3>Data Dashboard Healthcare</h3>
+                  
                   <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                     industry's standard</p>
                     <ul>
@@ -114,13 +144,15 @@
               </div>
               </div>
             </div>
+           
 
 
             <!-- card 3 -->
-            <div class="card">
-              <div class="card-body">
+          
+              <div class="card-body cc">
+                <div class="card3">
                 <div class="card-body-head">
-                  <h3>Profesional Art Printing Data</h3>
+                  <h3>Website Protfolio </h3>
                   <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                     industry's standard</p>
                     <ul>
@@ -137,10 +169,11 @@
 
 
             <!-- card 4 -->
-            <div class="card">
-              <div class="card-body">
+           
+              <div class="card-body cc">
+                <div class="card4">
                 <div class="card-body-head">
-                  <h3>Profesional Art Printing Data</h3>
+                  <h3>Profesional Art Printing Data More</h3>
                   <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                     industry's standard</p>
                     <ul>
@@ -154,13 +187,15 @@
               </div>
               </div>
             </div>
+            
 
 
             <!-- card 5 -->
-            <div class="card">
-              <div class="card-body">
+            
+              <div class="card-body cc">
+                <div class="card5">
                 <div class="card-body-head">
-                  <h3>Profesional Art Printing Data</h3>
+                  <h3>Data Dashboard Healthcare</h3>
                   <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                     industry's standard</p>
                     <ul>
@@ -174,13 +209,15 @@
               </div>
               </div>
             </div>
+           
 
           
             <!-- card 6 -->
-            <div class="card">
-              <div class="card-body">
+            
+              <div class="card-body cc">
+                <div class="card6">
                 <div class="card-body-head">
-                  <h3>Profesional Art Printing Data</h3>
+                  <h3>Website Protfolio </h3>
                   <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                     industry's standard</p>
                     <ul>
@@ -194,32 +231,14 @@
               </div>
               </div>
             </div>
-
-
-            <!-- card 7 -->
-            <div class="card">
-              <div class="card-body">
-                <div class="card-body-head">
-                  <h3>Profesional Art Printing Data</h3>
-                  <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                    <ul>
-                      <li class="language">html</li>
-                      <li class="language">bootstrap</li>
-                      <li class="language">Ruby</li>
-                    </ul>
-                </div>
-                <div class="card-body-bottom">
-                <button class="project-button" type="button"> See Project</button>
-              </div>
+         
               </div>
             </div>
-    </section>
 
     <!-- About Me -->
     <section class="about-section">
       <div class="about">
-        <div>
+        <div id = "aboutme">
           <h1 class="intro"> About me</h1>
           <p class="description">Hello I’m a software developer! I can help you build a product , feature or website
             Look through some of my work and experience! If you like what you see and have a project you need coded,
@@ -269,6 +288,7 @@
       </div>
     </section>
     <footer>
+      <div class="footer-top">
       <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
       
      <form action="https://formspree.io/f/mpzbbknz" method="POST">
@@ -279,6 +299,7 @@
        <button id="submit-button" type="submit">Get in touch</button>
       </div>
       </form>
+    </div>
        <hr>
        <div id="social-icons-footer">
         <ul>
@@ -289,12 +310,8 @@
           <li class="icon"><a href="https://medium.com"><img src="Images/medium1.svg" alt="medium" /></a></li>
         </ul>
       </div>
-
-      <!-- <div id="shape">
-        <img src="Images/Light.png" alt= " Back Indicator"/>
-      </div> -->
     </footer>
- 
+     </section>
   </div>
 </body>
 
