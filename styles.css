@@ -15,7 +15,7 @@ li {
 }
 
 header {
-  height: 10%;
+  height: 72px;
   background: #3c3a39;
 }
 
@@ -42,8 +42,7 @@ header {
   background-image: url("Images/background.png");
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  padding: 6vh 3.6vh 0.76vh 3.6vh;
-  height: 90vh;
+  padding: 120px 24px;
 }
 
 nav ul li {
@@ -51,35 +50,38 @@ nav ul li {
 }
 
 .intro {
-  width: 49.7vh;
-  height: 13.7vh;
-  font-family: 'Crete Round', serif;
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 8.5vh;
-  line-height: 9.7vh;
-  letter-spacing: 0.05vh;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
   color: #ff6b00;
 }
 
 h3 {
-  width: 49.7vh;
-  height: 4.1vh;
+  width: 327px;
+  height: 27px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 3.6vh;
-  line-height: 4.8vh;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
   color: #fff5e1;
 }
 
 .description {
-  width: 49.77vh;
-  font-family: 'Poppins', serif;
+  width: 327px;
+  height: 123px;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2.43vh;
-  line-height: 3.65vh;
+  font-size: 16px;
+  line-height: 24px;
   color: #fff;
 }
 
@@ -88,36 +90,51 @@ h3 {
 }
 
 footer ul li {
-  padding-right: 2vh;
+  padding-right: 13.14px;
 }
 
 .skills li {
-  padding: 2vh 2vh;
+  padding: 13px;
   display: block;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-size: 3.3vh;
-  line-height: 6.5vh;
+  font-size: 21px;
+  line-height: 42.7px;
   font-weight: 400;
 }
 
-.work ul {
-  padding: 0%;
-}
-
-.work ul li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2.5vh;
-  line-height: 3.04vh;
-  color: #091e42;
+#labels {
+  padding-left: 0%;
+  padding-right: 1%;
+  box-sizing: border-box;
+  display: flex;
 }
 
 .card ul {
   padding: 0;
   margin-left: 0%;
   margin-bottom: 5%;
+  display: flex;
+}
+
+#labels ul {
+  padding-left: 0%;
+  display: flex;
+}
+
+.language {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 10px 12px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  border: 1px solid #8993a4;
 }
 
 .card ul li {
@@ -144,13 +161,13 @@ footer ul li {
 
 footer h1 {
   margin: 10%;
-  margin-top: 17vh;
+  margin-top: 100px;
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 5vh;
+  font-size: 32px;
   color: #172b4d;
-  line-height: 6.6vh;
+  line-height: 43.3px;
   text-align: center;
 }
 
@@ -158,8 +175,8 @@ footer h1 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 6vh;
-  padding-top: 12vh;
+  font-size: 40px;
+  padding-top: 78px;
   color: #091e42;
   text-align: center;
 }
@@ -174,7 +191,7 @@ footer h1 {
 
 hr {
   width: 80%;
-  margin-bottom: 5vh;
+  margin-bottom: 32px;
 }
 
 .work img {
@@ -194,29 +211,23 @@ hr {
   height: 24.5;
 }
 
-.language {
-  padding: 1.8vh;
-  border: 1px solid #8993a4;
-  color: unset;
-  font-family: 'Inter', sans-serif;
-  box-sizing: border-box;
-  align-items: center;
-  font-weight: 500;
-  font-size: 2.2vh;
-  line-height: 3.04vh;
-}
-
 button {
   color: #fff;
   background: #ff6b00;
   border: none;
-  padding: 1vh;
-  padding-left: 0%;
+  padding: 12px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  letter-spacing: 0.1vh;
+  letter-spacing: 0.03em;
   text-align: center;
+}
+
+#see-project-small {
+  width: 124px;
+  height: 48px;
+  gap: 10px;
+  padding: 12px;
 }
 
 form button {
@@ -226,19 +237,26 @@ form button {
   height: 48px;
 }
 
-#see-project-small {
-  width: 18.5vh;
-  height: 7.3vh;
-  margin-left: 0%;
-  font-size: 2.58vh;
-}
-
 button:hover {
   background-color: #e78139;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.about button {
+  letter-spacing: 0.03em;
+  line-height: 3.6vh;
+  font-size: 2.5vh;
+  width: 24vh;
+  height: 7.3vh;
+}
+
+.card button:hover {
+  transition: none;
+  transform: none;
 }
 
 .card {
-  /* min-height: 60.8vh; */
   min-width: 40vh;
   padding: 0%;
   margin: 5%;
@@ -254,8 +272,6 @@ button:hover {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-
-  /* padding-top: 9vh; */
   width: 100%;
 }
 
@@ -274,10 +290,6 @@ button:hover {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-
-  /* margin-bottom: 10%; */
-
-  /* margin-top: 80px; */
   width: 90%;
   margin-top: 20%;
 }
@@ -296,8 +308,6 @@ button:hover {
 .card-body-bottom {
   margin: 0%;
   padding: 0%;
-
-  /* min-width: 40vh; */
 }
 
 .project-button {
@@ -313,16 +323,10 @@ button:hover {
 
 .about {
   background-image: url("Images/about.png");
-
-  /* display: flex; */
   background-position: 100% 100%;
-
-  /* flex-direction: column; */
   background-repeat: no-repeat;
   padding: 3vh 3.6vh 0.76vh 3.6vh;
   height: 100vh;
-
-  /* position: relative; */
   margin-top: 5vh;
 }
 
@@ -340,38 +344,30 @@ button:hover {
   padding-bottom: 6vh;
 }
 
-.about button {
-  letter-spacing: 0.03em;
-  line-height: 3.6vh;
-  font-size: 2.5vh;
-  width: 24vh;
-  height: 7.3vh;
-}
-
 .skills {
   font-family: 'Inter', sans-serif;
   color: #fff;
-  padding-bottom: 10vh;
+  padding-bottom: 10%;
 }
 
 .skills img {
-  width: 3vh;
-  height: 3vh;
+  width: 20px;
+  height: 20px;
 }
 
 .skills h1 {
-  padding-left: 1vh;
+  padding-left: 1%;
   display: inline;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 4.8vh;
-  line-height: 6.6vh;
+  font-size: 31.5px;
+  line-height: 43px;
 }
 
 .center {
   text-align: center;
-  padding-top: 15vh;
+  padding-top: 10%;
 }
 
 footer {
@@ -420,7 +416,7 @@ textarea::placeholder {
 }
 
 footer hr {
-  margin-top: 17vh;
+  margin-top: 20%;
   margin-bottom: 0%;
   width: 100%;
 }
@@ -428,7 +424,7 @@ footer hr {
 #social-icons-footer {
   display: flex;
   justify-content: center;
-  margin-top: 1vh;
+  margin-top: 0%;
   padding-top: 0%;
 }
 
@@ -483,13 +479,17 @@ footer hr {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    height: 100%;
-    padding-top: 9%;
-    padding-bottom: 9%;
+    background: #1c1a19;
     background-image: url("Images/background-desktop.png");
-    background-position: right center;
-    background-size: 50% 100%;
+    background-position: right top;
+    background-size: 40% 100%;
     background-repeat: no-repeat;
+    padding: 120px 24px;
+    gap: 12px;
+  }
+
+  .intro {
+    margin-bottom: 0%;
   }
 
   .hero p {
@@ -510,11 +510,6 @@ footer hr {
   #hero-main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
-
-  .description {
-    width: 60%;
   }
 
   .card-body-head p {
@@ -526,7 +521,6 @@ footer hr {
     flex-direction: column;
     margin: 0%;
     padding: 5%;
-    box-sizing: border-box;
   }
 
   #work-top {
@@ -538,18 +532,22 @@ footer hr {
 
   .divider {
     border-top: 2px solid  #212121;
-    width: 60%;
+    width: 50%;
   }
 
   .footer-top h1 {
+    padding-top: 7%;
     width: 40%;
     text-align: left;
   }
 
   #work-top h1 {
-    padding-left: 3%;
-    padding-top: 0%;
-    padding-right: 2%;
+    padding: 0% 2%;
+  }
+
+  footer hr {
+    margin-top: 5%;
+    width: 100%;
   }
 
   #work-top hr {
@@ -564,7 +562,6 @@ footer hr {
   #work-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-width: 60%;
   }
 
@@ -580,24 +577,7 @@ footer hr {
 
   #work-right h2 {
     margin-top: 0%;
-    padding-bottom: 0%;
     margin-bottom: 3%;
-  }
-
-  #work-right p {
-    padding-top: 0%;
-    margin-top: 0%;
-  }
-
-  #labels ul {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-right: 1%;
-    padding-right: 1%;
-  }
-
-  #labels ul li {
-    margin-right: 2%;
   }
 
   .card {
@@ -610,14 +590,12 @@ footer hr {
   .card-body-head {
     display: flex;
     align-content: flex-end;
-    padding-top: 50%;
-
-    /* padding-bottom: 2%; */
+    padding-top: 30%;
   }
 
   .card-body-head h3 {
     width: 100%;
-    height: 15vh;
+    height: 3em;
     display: flex;
     align-items: flex-end;
   }
@@ -632,6 +610,11 @@ footer hr {
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
+  }
+
+  .cc:hover {
+    box-shadow: 20px 20px 30px -10px #192824;
+    transition: 0.3s ease-in-out;
   }
 
   .card2 button {
@@ -703,6 +686,11 @@ footer hr {
     height: 70%;
   }
 
+  #aboutme h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
   #aboutme {
     width: 80%;
     padding-bottom: 15%;
@@ -711,10 +699,20 @@ footer hr {
   .center {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
+    justify-content: space-around;
+    padding-left: 6%;
+    margin: 3%;
     text-align: left;
+  }
+
+  form div {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+  }
+
+  .center > div {
+    width: 100%;
   }
 
   #skills-ul {
@@ -724,10 +722,15 @@ footer hr {
   .footer-top {
     display: flex;
     flex-direction: row;
+    padding: 5% 8% 5% 0%;
+  }
+
+  .footer-top > * {
+    margin-top: 0%;
+    padding-top: 5%;
   }
 
   form {
-    padding-top: 5%;
-    width: 70%;
+    width: 60%;
   }
 }
