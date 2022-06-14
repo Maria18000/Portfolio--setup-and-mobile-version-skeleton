@@ -5,9 +5,87 @@ body {
   overflow-x: hidden;
 }
 
-#desktop-header {
-  display: none;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background: #3C3A39;
+  height: 72px;
 }
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  background-color: #fff;
+  transform: translateY(8px) rotate(48deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  background-color: #fff;
+  transform: translateY(-8px) rotate(-48deg);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -150%;
+  top: -20px;
+  padding-top: 15%;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  background: #3C3A39;
+  mix-blend-mode: normal;
+}
+
+.divider-menu {
+  border-top: 1px solid #6F6C6B;
+  width: 90%;
+}
+
+.nav-item {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item a {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+ #desktop-header {
+  display: none;
+} 
 
 li {
   list-style: none;
@@ -32,9 +110,13 @@ header {
 
 .logo {
   color: #fff5e1;
-  font-family: 'Crete Round', serif;
+  font-family: 'Roboto', sans-serif;
+font-style: normal;
   margin-left: 1em;
   text-decoration: none;
+  font-weight: 700;
+font-size: 18px;
+line-height: 24px;
 }
 
 .hero {
@@ -331,19 +413,19 @@ button:hover {
 }
 
 .about h1 {
-  line-height: 13vh;
-  letter-spacing: 0.05vh;
-  font-size: 10.9vh;
-  text-align: left;
-  padding-top: 5vh;
   padding-bottom: 0;
   margin-bottom: 0;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
 }
 
 .about p {
+  padding-top: 0%;
+  margin-top: 0%;
   padding-bottom: 6vh;
 }
-
 .skills {
   font-family: 'Inter', sans-serif;
   color: #fff;
