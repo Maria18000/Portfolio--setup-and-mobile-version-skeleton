@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
-  background: #3C3A39;
+  background: #3c3a39;
   height: 72px;
 }
 
@@ -51,12 +51,12 @@ body {
   width: 100%;
   height: 100%;
   transition: 0.3s;
-  background: #3C3A39;
+  background: #3c3a39;
   mix-blend-mode: normal;
 }
 
 .divider-menu {
-  border-top: 1px solid #6F6C6B;
+  border-top: 1px solid #6f6c6b;
   width: 90%;
 }
 
@@ -67,9 +67,6 @@ body {
 }
 
 .nav-item a {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
   color: #fff;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
@@ -83,9 +80,9 @@ body {
   left: 0;
 }
 
- #desktop-header {
+#desktop-header {
   display: none;
-} 
+}
 
 li {
   list-style: none;
@@ -111,12 +108,12 @@ header {
 .logo {
   color: #fff5e1;
   font-family: 'Roboto', sans-serif;
-font-style: normal;
+  font-style: normal;
   margin-left: 1em;
   text-decoration: none;
   font-weight: 700;
-font-size: 18px;
-line-height: 24px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .hero {
@@ -426,6 +423,7 @@ button:hover {
   margin-top: 0%;
   padding-bottom: 6vh;
 }
+
 .skills {
   font-family: 'Inter', sans-serif;
   color: #fff;
