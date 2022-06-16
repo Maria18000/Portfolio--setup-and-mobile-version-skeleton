@@ -909,16 +909,48 @@ footer hr {
     display: none;
   }
 
+  .card3 button {
+    display: none;
+  }
+
+  .card4 button {
+    display: none;
+  }
+
+  .card5 button {
+    display: none;
+  }
+
+  .card6 button {
+    display: none;
+  }
+
+  .card2:hover button {
+    display: block;
+  }
+
+  .card3:hover button {
+    display: block;
+  }
+
+  .card4:hover button {
+    display: block;
+  }
+
+  .card5:hover button {
+    display: block;
+  }
+
+  .card6:hover button {
+    display: block;
+  }
+
   .card2 {
     background-image: url("Images/card2.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
-  }
-
-  .card3 button {
-    display: none;
   }
 
   .card3 {
@@ -929,10 +961,6 @@ footer hr {
     align-items: flex-end;
   }
 
-  .card4 button {
-    display: none;
-  }
-
   .card4 {
     background-image: url("Images/card4.png");
     background-size: cover;
@@ -941,20 +969,12 @@ footer hr {
     align-items: flex-end;
   }
 
-  .card5 button {
-    display: none;
-  }
-
   .card5 {
     background-image: url("Images/card2.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
-  }
-
-  .card6 button {
-    display: none;
   }
 
   .card6 {
