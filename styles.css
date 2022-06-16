@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 body {
   margin: 0;
@@ -189,6 +190,12 @@ footer ul li {
   display: flex;
 }
 
+/* .modal-labels {
+  padding-top: 0%;
+  margin-top: 0%;
+  padding-left: 3%;
+} */
+
 .card ul {
   padding: 0;
   margin-left: 0%;
@@ -320,6 +327,7 @@ button:hover {
   background-color: #e78139;
   transition: all 0.5s ease-in-out;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .about button {
@@ -387,6 +395,131 @@ button:hover {
 .card-body-bottom {
   margin: 0%;
   padding: 0%;
+}
+
+/* Modal Styling */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: white;
+  width: 90%;
+  max-width: 80%;
+  height: 90%;
+  padding-bottom: 15%;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 3%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+.cd {
+  display: none;
+}
+
+.modal h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.modal-body {
+  padding-left: 3%;
+}
+
+.modal .language {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 30px;
+  font-weight: bold;
+  color: #67798e;
+}
+
+.close-button:hover {
+  background: none;
+  cursor: pointer;
+  color: #67798e;
+}
+
+.modal img {
+  width: 95%;
+}
+
+.modal p {
+  width: 95%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  text-align: justify;
+  height: 10%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-bottom {
+  width: 100%;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.modal-button {
+  width: 120%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 1%;
+}
+
+.modal-bottom a {
+  text-decoration: none;
+}
+
+/* Modal styling end */
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .project-button {
@@ -596,6 +729,81 @@ footer hr {
     margin-top: 0%;
   }
 
+  /* Modal */
+
+  .modal {
+    height: 95%;
+    width: 100%;
+    margin-bottom: 10%;
+    padding: 0%;
+    border: 1px solid #ebecf0;
+  }
+
+  .cm {
+    display: none;
+  }
+
+  .cd {
+    display: block;
+  }
+
+  .modal-labels {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .modal .language {
+    height: 5%;
+    padding: 2%;
+    margin-bottom: 0%;
+  }
+
+  .modal-center {
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .modal-left {
+    display: flex;
+    flex-direction: column;
+    min-width: 55%;
+    max-height: 100%;
+  }
+
+  .modal img {
+    min-width: 60%;
+  }
+
+  .modal-right {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    padding: 0%;
+  }
+
+  .modal p {
+    padding: 0%;
+    margin: 0%;
+    padding-bottom: 5%;
+    font-size: 0.9em;
+    margin-bottom: auto;
+  }
+
+  .modal-bottom {
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: auto;
+  }
+
+  .modal-button {
+    width: 110%;
+  }
+
+  /* Modal end */
+
   .work {
     display: flex;
     flex-direction: column;
@@ -701,16 +909,48 @@ footer hr {
     display: none;
   }
 
+  .card3 button {
+    display: none;
+  }
+
+  .card4 button {
+    display: none;
+  }
+
+  .card5 button {
+    display: none;
+  }
+
+  .card6 button {
+    display: none;
+  }
+
+  .card2:hover button {
+    display: block;
+  }
+
+  .card3:hover button {
+    display: block;
+  }
+
+  .card4:hover button {
+    display: block;
+  }
+
+  .card5:hover button {
+    display: block;
+  }
+
+  .card6:hover button {
+    display: block;
+  }
+
   .card2 {
     background-image: url("Images/card2.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
-  }
-
-  .card3 button {
-    display: none;
   }
 
   .card3 {
@@ -721,10 +961,6 @@ footer hr {
     align-items: flex-end;
   }
 
-  .card4 button {
-    display: none;
-  }
-
   .card4 {
     background-image: url("Images/card4.png");
     background-size: cover;
@@ -733,20 +969,12 @@ footer hr {
     align-items: flex-end;
   }
 
-  .card5 button {
-    display: none;
-  }
-
   .card5 {
     background-image: url("Images/card2.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
-  }
-
-  .card6 button {
-    display: none;
   }
 
   .card6 {

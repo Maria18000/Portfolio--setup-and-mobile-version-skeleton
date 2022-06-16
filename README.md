@@ -1,6 +1,8 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Portfolio
 
-> A mobile-based version of my portfolio 
+> A responsive portfolio to showcase my skills in html and css
 
 
 ## Built With
@@ -9,7 +11,7 @@
 - Visual Studio Code
 
 ## Live Demo
-  Site Link[@githubpages](https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/)
+  [@Live Demo](https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/)
 
 ## Getting Started
 
