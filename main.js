@@ -1,4 +1,4 @@
-//menu
+// menu
 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -13,89 +13,85 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-
 // modal code
-
-
 
 const cardArray = [
   {
-    cardTitle:'Multi-Post Stories',
-    cardTitle2:'Keeping track of hundreds  of components website',
-      technologies: ['html', 'css', 'Ruby on Rails'],
-      featuredImage: 'Images/featured.png',
-      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
-      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
+    cardTitle: 'Multi-Post Stories',
+    cardTitle2: 'Keeping track of hundreds  of components website',
+    technologies: ['html', 'css', 'Ruby on Rails'],
+    featuredImage: 'Images/featured.png',
+    cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveLink: 'https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/',
+    sourceLink: 'https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton',
   },
 
-    //card 2
+  // card 2
 
-    {
-      cardTitle:'Multi-Post Stories',
-      cardTitle2:'Keeping track of hundreds  of components website',
-      technologies: ['html', 'css', 'Ruby on Rails'],
-      featuredImage: 'Images/featured.png',
-      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
-      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
-    },
+  {
+    cardTitle: 'Multi-Post Stories',
+    cardTitle2: 'Keeping track of hundreds  of components website',
+    technologies: ['html', 'css', 'Ruby on Rails'],
+    featuredImage: 'Images/featured.png',
+    cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveLink: 'https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/',
+    sourceLink: 'https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton',
+  },
 
-    //card3
+  // card3
 
-    {
-      cardTitle:'Multi-Post Stories',
-      cardTitle2:'Keeping track of hundreds  of components website',
-      technologies: ['html', 'css', 'Ruby on Rails'],
-      featuredImage: 'Images/featured.png',
-      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
-      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
-    },
+  {
+    cardTitle: 'Multi-Post Stories',
+    cardTitle2: 'Keeping track of hundreds  of components website',
+    technologies: ['html', 'css', 'Ruby on Rails'],
+    featuredImage: 'Images/featured.png',
+    cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveLink: 'https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/',
+    sourceLink: 'https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton',
+  },
 
-    //card4
+  // card4
 
-    {
-      cardTitle:'Multi-Post Stories',
-      cardTitle2:'Keeping track of hundreds  of components website',
-      technologies: ['html', 'css', 'Ruby on Rails'],
-      featuredImage: 'Images/featured.png',
-      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
-      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
-    },
+  {
+    cardTitle: 'Multi-Post Stories',
+    cardTitle2: 'Keeping track of hundreds  of components website',
+    technologies: ['html', 'css', 'Ruby on Rails'],
+    featuredImage: 'Images/featured.png',
+    cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveLink: 'https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/',
+    sourceLink: 'https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton',
+  },
 
-    //card5 
+  // card5
 
-    {
-      cardTitle:'Multi-Post Stories',
-      cardTitle2:'Keeping track of hundreds  of components website',
-      technologies: ['html', 'css', 'Ruby on Rails'],
-      featuredImage: 'Images/featured.png',
-      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
-      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
-    },
+  {
+    cardTitle: 'Multi-Post Stories',
+    cardTitle2: 'Keeping track of hundreds  of components website',
+    technologies: ['html', 'css', 'Ruby on Rails'],
+    featuredImage: 'Images/featured.png',
+    cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveLink: 'https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/',
+    sourceLink: 'https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton',
+  },
 
-    //card6
+  // card6
 
-    {
-      cardTitle:'Multi-Post Stories',
-      cardTitle2:'Keeping track of hundreds  of components website',
-      technologies: ['html', 'css', 'Ruby on Rails'],
-      featuredImage: 'Images/featured.png',
-      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
-      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
-      
-    },
+  {
+    cardTitle: 'Multi-Post Stories',
+    cardTitle2: 'Keeping track of hundreds  of components website',
+    technologies: ['html', 'css', 'Ruby on Rails'],
+    featuredImage: 'Images/featured.png',
+    cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveLink: 'https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/',
+    sourceLink: 'https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton',
+
+  },
 
 ];
 
-const cardss = document.querySelector(".cards-section");
-cardArray.forEach((c) => 
-{
-  let card = document.createElement("div");
+const cardss = document.querySelector('.cards-section');
+cardArray.forEach((c) => {
+  const card = document.createElement('div');
 
   card.innerHTML = (`
   <div class="modal" id="modal">
@@ -132,43 +128,39 @@ cardArray.forEach((c) =>
   cardss.appendChild(card);
 });
 
-
-
-
-
 const openBtn = document.querySelectorAll('[data-modal-target]');
 const closeBtn = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
-openBtn.forEach(button => {
+openBtn.forEach((button) => {
   button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
 
 overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});
 
-closeBtn.forEach(button => {
+closeBtn.forEach((button) => {
   button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
 
 function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
 }
 
 function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
 }
