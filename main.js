@@ -1,3 +1,5 @@
+//menu
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -10,3 +12,163 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   hamburger.classList.remove('active');
   navMenu.classList.remove('active');
 }));
+
+
+// modal code
+
+
+
+const cardArray = [
+  {
+    cardTitle:'Multi-Post Stories',
+    cardTitle2:'Keeping track of hundreds  of components website',
+      technologies: ['html', 'css', 'Ruby on Rails'],
+      featuredImage: 'Images/featured.png',
+      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
+      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
+  },
+
+    //card 2
+
+    {
+      cardTitle:'Multi-Post Stories',
+      cardTitle2:'Keeping track of hundreds  of components website',
+      technologies: ['html', 'css', 'Ruby on Rails'],
+      featuredImage: 'Images/featured.png',
+      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
+      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
+    },
+
+    //card3
+
+    {
+      cardTitle:'Multi-Post Stories',
+      cardTitle2:'Keeping track of hundreds  of components website',
+      technologies: ['html', 'css', 'Ruby on Rails'],
+      featuredImage: 'Images/featured.png',
+      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
+      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
+    },
+
+    //card4
+
+    {
+      cardTitle:'Multi-Post Stories',
+      cardTitle2:'Keeping track of hundreds  of components website',
+      technologies: ['html', 'css', 'Ruby on Rails'],
+      featuredImage: 'Images/featured.png',
+      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
+      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
+    },
+
+    //card5 
+
+    {
+      cardTitle:'Multi-Post Stories',
+      cardTitle2:'Keeping track of hundreds  of components website',
+      technologies: ['html', 'css', 'Ruby on Rails'],
+      featuredImage: 'Images/featured.png',
+      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
+      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
+    },
+
+    //card6
+
+    {
+      cardTitle:'Multi-Post Stories',
+      cardTitle2:'Keeping track of hundreds  of components website',
+      technologies: ['html', 'css', 'Ruby on Rails'],
+      featuredImage: 'Images/featured.png',
+      cardDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      liveLink:"https://maria18000.github.io/Portfolio--setup-and-mobile-version-skeleton/",
+      sourceLink:"https://github.com/Maria18000/Portfolio--setup-and-mobile-version-skeleton",
+      
+    },
+
+];
+
+const cardss = document.querySelector(".cards-section");
+cardArray.forEach((c) => 
+{
+  let card = document.createElement("div");
+
+  card.innerHTML = (`
+  <div class="modal" id="modal">
+            <div class="modal-header">
+              <h2 class="cm">${c.cardTitle}</h2>
+              <h2 class="cd">${c.cardTitle2}</h2>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                  <ul class="modal-labels">
+                    <li class="language">${c.technologies[0]}</li>
+                    <li class="language">${c.technologies[1]}</li>
+                    <li class="language">${c.technologies[2]}</li>
+                  </ul>
+               <div class="modal-center">
+               <div class="modal-left">
+                <img src="${c.featuredImage}">
+                </div>
+                  <div class="modal-right">
+                  <div>
+                    <p>${c.cardDescription}</p>
+                    </div>
+                      <div class="modal-bottom">
+                        <a href = "${c.liveLink}"><button class= "modal-button" type="button"> See Live <i class="bi bi-arrow-up-right-circle"></i></button><a/>
+                        <a href = "${c.sourceLink}"><button class= "modal-button" type="button"> See Source <i class="bi bi-github"></i></button><a/>
+                      </div>
+                  </div>
+                </div>
+            </div>
+     </div>
+  `);
+
+  cardss.appendChild(card);
+});
+
+
+
+
+
+const openBtn = document.querySelectorAll('[data-modal-target]');
+const closeBtn = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+
+openBtn.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+closeBtn.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
+}
