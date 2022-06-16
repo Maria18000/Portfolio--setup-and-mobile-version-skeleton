@@ -164,3 +164,28 @@ closeBtn.forEach((button) => {
     closeModal(modal);
   });
 });
+
+// Email Validation
+
+const form = document.querySelector('form');
+const emailAddress = document.getElementById('email');
+const format = '[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$';
+const error = document.getElementById('error');
+
+function validateEmail() {
+  if (!emailAddress.value.match(format)) {
+    emailAddress.value = '';
+    error.innerText = 'Enter Valid Email i.e. abc@gmail.com';
+    return false;
+  }
+
+  error.innerHTML = '';
+  form.submit();
+  form.reset();
+  return true;
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  validateEmail();
+});
