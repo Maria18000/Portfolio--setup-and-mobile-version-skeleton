@@ -174,7 +174,6 @@ const error = document.getElementById('error');
 
 function validateEmail() {
   if (!emailAddress.value.match(format)) {
-    emailAddress.value = '';
     error.innerText = 'Enter Valid Email i.e. abc@gmail.com';
     return false;
   }
@@ -189,3 +188,32 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   validateEmail();
 });
+
+// Storing data in browser
+
+function store() {
+  const data = {
+    fullname: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+}
+
+function populate() {
+  const newData = JSON.parse(localStorage.getItem('data'));
+  document.getElementById('name').value = newData.fullname;
+  document.getElementById('email').value = newData.email;
+  document.getElementById('message').value = newData.message;
+}
+
+form.addEventListener('input', () => {
+  store();
+});
+
+// eslint-disable-next-line func-names
+window.onload = function () {
+  if (localStorage) {
+    populate();
+  }
+};
