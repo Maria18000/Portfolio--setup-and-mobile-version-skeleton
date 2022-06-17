@@ -190,6 +190,7 @@ form.addEventListener('submit', (event) => {
 });
 
 // Storing data in browser
+
 function store() {
   const data = {
     fullname: document.getElementById('name').value,
@@ -199,6 +200,20 @@ function store() {
   localStorage.setItem('data', JSON.stringify(data));
 }
 
+function populate() {
+  const newData = JSON.parse(localStorage.getItem('data'));
+  document.getElementById('name').value = newData.fullname;
+  document.getElementById('email').value = newData.email;
+  document.getElementById('message').value = newData.message;
+}
+
 form.addEventListener('input', () => {
   store();
 });
+
+// eslint-disable-next-line func-names
+window.onload = function () {
+  if (localStorage) {
+    populate();
+  }
+};
