@@ -174,7 +174,6 @@ const error = document.getElementById('error');
 
 function validateEmail() {
   if (!emailAddress.value.match(format)) {
-    emailAddress.value = '';
     error.innerText = 'Enter Valid Email i.e. abc@gmail.com';
     return false;
   }
@@ -188,4 +187,18 @@ function validateEmail() {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   validateEmail();
+});
+
+// Storing data in browser
+function store() {
+  const data = {
+    fullname: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+}
+
+form.addEventListener('input', () => {
+  store();
 });
