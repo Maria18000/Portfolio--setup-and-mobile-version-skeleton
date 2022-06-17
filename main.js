@@ -184,7 +184,7 @@ function validateEmail() {
   return true;
 }
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', () => {
   event.preventDefault();
   validateEmail();
 });
@@ -202,12 +202,12 @@ function store() {
 
 function populate() {
   const newData = JSON.parse(localStorage.getItem('data'));
-  document.getElementById('name').value = newData.fullname;
-  document.getElementById('email').value = newData.email;
-  document.getElementById('message').value = newData.message;
+  document.getElementById('#name').value = newData.fullname;
+  document.getElementById('#email').value = newData.email;
+  document.getElementById('#message').value = newData.message;
 }
 
-form.addEventListener('input', () => {
+form.addEventListener('submit', () => {
   store();
 });
 
